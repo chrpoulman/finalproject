@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Project 3</title>
+    </head>
+    <body>
+        <h1>Image display and modify</h1>
+        <h2>What do you want to do:</h2>
+        <div>
+            <form action="SlideShow" method="get">
+            <p>See and chose the image</p>
+            <input type="submit" name="act" value="slides"/>
+            </form>
+        </div>
+        <div>
+            <form action="ImageModify" method="get">
+            <p>Chose the image by num to modify</p>
+            <input type="text" name="image" />
+            <p>width in pixels</p><input type="text" name="width" />
+            <p>height in pixels</p><input type="text" name="height" />
+            <input type="submit" name="act" value="modify"/>
+            </form>
+        </div>
+        <div>
+            <form action="XmlEditor" method="get">
+            <h2>XML editor</h2>
+            <h3>Chose an XML file of an image and modify one of the above attributes</h3>
+            <p>Chose the xmlfile by num to modify</p>
+            <input type="text" name="image" />
+            <p>width</p><input type="text" name="width" />
+            <p>height</p><input type="text" name="height" />
+            <p>caption</p><input type="text" name="caption" />
+            <input type="submit" name="act" value="modify"/>
+        </form>
+        </div>
+        <div>
+            <body>
+			<form method="post" action="ImageUpload2"enctype="multipart/form-data">
+			Select file to upload: <input type="file" name="dataFile"  id="fileChooser" /><br />
+        <br /> <input type="submit" value="Upload" />
+    </form>
+</body>
+        </div>
+    </body>
+</html>
